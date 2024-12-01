@@ -21,6 +21,7 @@ data/inputs/*
 !data/inputs/.keep
 data/puzzles/*
 !data/puzzles/.keep
+data/examples/*
 
 # Dhat
 dhat-heap.json
@@ -28,4 +29,3 @@ dhat-heap.json
 # Benchmarks
 
 data/timings.json
-data/examples/10.txt
