@@ -21,13 +21,13 @@ pub fn part_one(input: &str) -> Option<i32> {
     let mut total: i32 = 0;
 
     for i in 1..=left.len() {
-        let left: i32 = *left.iter().nth(i - 1).unwrap();
-        let right: i32 = *right.iter().nth(i - 1).unwrap();
+        let left: i32 = *left.get(i - 1).unwrap();
+        let right: i32 = *right.get(i - 1).unwrap();
         let diff: i32 = left - right;
         total += diff.abs();
     }
 
-    return Some(total);
+    Some(total)
 }
 
 pub fn part_two(input: &str) -> Option<i32> {
@@ -57,7 +57,7 @@ pub fn part_two(input: &str) -> Option<i32> {
         total += n * n_left.len() as i32 * n_right.len() as i32;
     }
 
-    return Some(total);
+    Some(total)
 }
 
 #[cfg(test)]
