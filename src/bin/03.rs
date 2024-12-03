@@ -19,10 +19,10 @@ pub fn part_two(input: &str) -> Option<i64> {
 
     let lines: Vec<&str> = input.split("do()").collect();
 
-    for (_, line) in lines.iter().enumerate() {
+    for line in lines.iter() {
         let l: Vec<&str> = line.split("don't").collect();
 
-        for (_, [x, y]) in re.captures_iter(l.get(0).unwrap()).map(|c| c.extract()) {
+        for (_, [x, y]) in re.captures_iter(l.first().unwrap()).map(|c| c.extract()) {
             v.push(x.parse::<i64>().unwrap() * y.parse::<i64>().unwrap());
         }
     }

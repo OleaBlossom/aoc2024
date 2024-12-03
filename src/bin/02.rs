@@ -48,7 +48,7 @@ pub fn part_one(input: &str) -> Option<i32> {
 pub fn part_two(input: &str) -> Option<i32> {
     let v: Vec<&str> = input.lines().collect();
 
-    let mut total_safe: i32 = 0;
+    let total_safe: i32 = 0;
 
     for line in v.iter().enumerate() {
         let report_values: Vec<i32> = line
