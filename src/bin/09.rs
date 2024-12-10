@@ -48,7 +48,7 @@ pub fn part_one(input: &str) -> Option<i32> {
     Some(total)
 }
 
-pub fn part_two(input: &str) -> Option<u32> {
+pub fn part_two(_input: &str) -> Option<u32> {
     None
 }
 
