@@ -10,7 +10,7 @@ pub fn part_one(input: &str) -> Option<i32> {
             .pop()
             .unwrap()
             .split(" ")
-            .filter(|x| *x != "")
+            .filter(|x| !x.is_empty())
             .map(|i| i.parse::<i32>().unwrap())
             .collect();
         let expected_value: i32 = values.pop().unwrap().parse::<i32>().unwrap();
