@@ -46,6 +46,7 @@ pub fn part_one(input: &str) -> Option<i32> {
     Some(total_calibration_result)
 }
 
+#[allow(unused_variables)]
 pub fn part_two(input: &str) -> Option<u32> {
     None
 }

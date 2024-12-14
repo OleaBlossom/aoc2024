@@ -45,6 +45,7 @@ pub fn part_one(input: &str) -> Option<u64> {
     Some(total)
 }
 
+#[allow(unused_variables)]
 pub fn part_two(_input: &str) -> Option<u32> {
     None
 }

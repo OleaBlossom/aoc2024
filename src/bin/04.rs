@@ -1,5 +1,6 @@
 advent_of_code::solution!(4);
 
+#[allow(unused_variables)]
 pub fn part_one(input: &str) -> Option<u32> {
     let mut total = 0;
 
@@ -16,6 +17,7 @@ pub fn part_one(input: &str) -> Option<u32> {
     None
 }
 
+#[allow(unused_variables)]
 pub fn part_two(input: &str) -> Option<u32> {
     None
 }
